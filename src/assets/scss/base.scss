@@ -161,6 +161,12 @@ body{
       color: var(--t);
     }
   }
+
+  button{
+    &:active{
+      outline: none;
+    }
+  }
 }
 
 .form-group{
