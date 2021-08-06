@@ -3,7 +3,7 @@
 
 :root{
   --nav: #334868;
-  --not: #457B9C;
+  --noti: #457B9C;
   --title: #F1F5F9;
   --body: #D9DFE7;
   --t: #84A2B5;
@@ -109,4 +109,94 @@ body{
     font-size: 3rem;
     transform: rotate(45deg);
   }
+}
+
+.header{
+  &-top{
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+    ul{
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+
+      li{
+        margin: .25rem;
+      }
+    }
+
+    ul li a,
+    a{
+      text-decoration: none;
+      color: var(--nav);
+    }
+  }
+}
+
+.notification{
+  background-color: var(--noti);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend .container;
+
+  h2,
+  p{
+    color: white;
+  }
+  h2{
+    margin-top: 1rem;
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+  
+  p{
+    font-size: .8rem;
+    span{
+      color: var(--t);
+    }
+  }
+}
+
+.form-group{
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+
+  input{
+    &::placeholder{
+      color: var(--t);
+    }
+    @media(min-width: 992px){
+      min-width: 300px;
+    }
+  }
+  input,
+  button{
+    background-color: transparent;
+    border: 0;
+    color: var(--t);
+  }
+  input{
+    font-weight: 600;
+    font-size: .75rem;
+    font-style: italic;
+
+    &:focus{
+      outline: none;
+    }
+  }
+  button{
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.container{
+  padding: 0 1rem;
 }
