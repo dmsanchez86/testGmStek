@@ -112,9 +112,12 @@ body{
           display: flex;
           align-items: center;
           justify-content: center;
-          span:first-child{
-            
+
+          &.active{
+            color: darken(white, 10);
+            transform: scale(1.15);
           }
+
           span:last-child{
             display: none;
             font-size: .9rem;
