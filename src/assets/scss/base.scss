@@ -169,14 +169,35 @@ body{
       margin: 0;
 
       li{
-        margin: .25rem;
+        margin: .25rem .3rem;
+
+        a.notifications{
+          position: relative;
+
+          &:before{
+            content: attr(data);
+            position: absolute;
+            background-color: red;
+            top: 2px;
+            right: -5px;
+            border-radius: 50%;
+            font-size: .6rem;
+            color: white;
+            min-width: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+          }
+        }
       }
     }
 
     ul li a,
     a{
       text-decoration: none;
-      color: var(--nav);
+      color: #ABC3D3;
+      font-size: 1.35rem;
     }
   }
 }
