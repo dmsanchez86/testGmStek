@@ -52,6 +52,21 @@ body{
       background-color: var(--body);
       overflow: auto;
     }
+
+    &.nav-open .nav ul {
+      .logo a span{
+        font-size: 4rem;
+      }
+      li:not(.logo){
+        a{
+          display: grid;
+          grid-template-columns: 75px 75px;
+          span:last-child{
+            display: inline-flex;
+          }
+        }
+      }
+    }
   }
   
   &-2{ 
@@ -91,6 +106,22 @@ body{
         transform: scale(1.05);
         opacity: .7;
       }
+
+      &:not(.logo){
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span:first-child{
+            
+          }
+          span:last-child{
+            display: none;
+            font-size: .9rem;
+          }
+        }
+      }
+
       a{
         color: var(--t);
         text-decoration: none;
