@@ -6,7 +6,7 @@
         <a href="#" [routerLink]="['/']"><span class="icon-space-shuttle"></span></a>
       </li>
       <li>
-        <a href="#" [routerLink]="['/']" routerLinkActive="active" title="Home">
+        <a href="#" [routerLink]="['/']" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}" title="Home">
           <span class="icon-home"></span>
           <span class="nav-main-text">Home</span>
         </a>
