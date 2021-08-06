@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test2';
+  isOpenMenu: boolean = false;
+
+  nav(){
+    this.isOpenMenu = !this.isOpenMenu;
+  }
 }
