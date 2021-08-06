@@ -196,8 +196,14 @@ body{
       }
     }
 
+    ul li a{
+      &.active{
+        color: var(--nav);
+      }
+    }
     ul li a,
     a{
+      transition: 300ms;
       text-decoration: none;
       color: #ABC3D3;
       font-size: 1.35rem;
