@@ -3,34 +3,34 @@
   <nav class="nav">
     <ul class="nav-main">
       <li class="logo">
-        <a href="#"><span class="icon-space-shuttle"></span></a>
+        <a href="#" [routerLink]="['/']"><span class="icon-space-shuttle"></span></a>
       </li>
       <li>
-        <a href="#" title="Home">
+        <a href="#" [routerLink]="['/']" routerLinkActive="active" title="Home">
           <span class="icon-home"></span>
           <span class="nav-main-text">Home</span>
         </a>
       </li>
       <li>
-        <a href="#" title="Tranfers">
+        <a href="#" [routerLink]="['/transfers']" routerLinkActive="active" title="Tranfers">
           <span class="icon-exchange"></span>
           <span class="nav-main-text">Transfers</span>
         </a>
       </li>
       <li>
-        <a href="#" title="Cards">
+        <a href="#" title="Cards" [routerLink]="['/cards']" routerLinkActive="active">
           <span class="icon-credit-card"></span>
           <span class="nav-main-text">Cards</span>
         </a>
       </li>
       <li>
-        <a href="#" title="Graphics">
+        <a href="#" [routerLink]="['/graphics']" routerLinkActive="active" title="Graphics">
           <span class="icon-bar-chart"></span>
           <span class="nav-main-text">Graphics</span>
         </a>
       </li>
       <li>
-        <a href="#" title="Deals">
+        <a href="#" [routerLink]="['/deals']" routerLinkActive="active" title="Deals">
           <span class="icon-handshake-o"></span>
           <span class="nav-main-text">Deals</span>
         </a>
@@ -39,7 +39,7 @@
 
     <ul class="nav-settings">
       <li>
-        <a href="#" title="settings">
+        <a href="#" [routerLink]="['/settings']" routerLinkActive="active" title="settings">
           <span class="icon-cog"></span>
           <span class="nav-main-text">Settings</span>
         </a>
@@ -55,18 +55,18 @@
   
       <ul>
         <li>
-          <a href="#" title="Messages"><span class="icon-announcement"></span></a>
+          <a href="#" [routerLink]="['/messages']" routerLinkActive="active" title="Messages"><span class="icon-announcement"></span></a>
         </li>
         <li>
-          <a href="#" title="Bookmarks"><span class="icon-bookmark"></span></a>
+          <a href="#" [routerLink]="['/bookmarks']" routerLinkActive="active" title="Bookmarks"><span class="icon-bookmark"></span></a>
         </li>
         <li>
-          <a href="#" title="Notifications" class="notifications" data="3">
+          <a href="#" [routerLink]="['/notifications']" routerLinkActive="active" title="Notifications" class="notifications" data="3">
             <span class="icon-bell"></span>
           </a>
         </li>
         <li>
-          <a href="#" title="Profile"><span class="icon-user-circle"></span></a>
+          <a href="#" [routerLink]="['/profile']" routerLinkActive="active" title="Profile"><span class="icon-user-circle"></span></a>
         </li>
       </ul>
     </div>
