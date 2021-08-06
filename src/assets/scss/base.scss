@@ -271,6 +271,22 @@ body{
     }
   }
 
+  &-btn{
+    border: solid thin var(--noti);
+    background-color: var(--noti);
+    color: white;
+    border-radius: 5px;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    box-shadow: 0 0 20px rgba(0,0,0,.2) inset;
+    cursor: pointer;
+    transition: 300ms;
+    
+    &:hover,
+    &:focus{
+      box-shadow: 0 0 20px rgba(0,0,0,0) inset;
+    }
+  }
 
   &-text{
     h3{
@@ -329,4 +345,11 @@ body{
   @media(min-width: 992px){
     padding: 0 1.5rem;
   }
+}
+
+.cg-1{
+  column-gap: 1rem;
+}
+.cg-2{
+  column-gap: 2rem;
 }
