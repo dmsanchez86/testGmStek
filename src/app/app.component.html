@@ -177,44 +177,48 @@
 
         <h3 class="panel-title">Card information</h3>
 
-        <div class="grid grid-2">
-
-          <div>
-            <div class="panel-inputs grid grid-panel-inputs">
+        <form action="#">
+          <div class="grid grid-2 cg-2">
   
-              <form action="#" class="form-group">
-                <select name="dodaac" id="" required>
-                  <option value="">Card Type*</option>
-                  <option value="option1">option1</option>
-                  <option value="option2">option2</option>
-                  <option value="option3">option3</option>
-                </select>
+            <div>
+              <div class="panel-inputs grid grid-panel-inputs">
+    
+                <div action="#" class="form-group">
+                  <select name="dodaac" id="" required>
+                    <option value="">Card Type*</option>
+                    <option value="option1">option1</option>
+                    <option value="option2">option2</option>
+                    <option value="option3">option3</option>
+                  </select>
+                </div>
   
-                <button type="submit"></button>
-              </form>
-
-              <input type="text" name="" placeholder="Tail or Truck#*" id="">
-  
+                <input type="text" name="" placeholder="Tail or Truck#*" id="" required>
+    
+              </div>
+              
             </div>
-            
-          </div>
-
-
-          <div>
-            <div class="panel-inputs grid grid-panel-inputs">
   
-              <form action="#" class="form-group">
-                <input type="text" name="fund_code" placeholder="Make/Model" id="" required>
-              </form>
-
-              <input type="text" name="" placeholder="Notes/Comments*" id="">
   
+            <div>
+              <div class="panel-inputs grid grid-panel-inputs">
+    
+                <div action="#" class="form-group">
+                  <input type="text" name="fund_code" placeholder="Make/Model" id="" required>
+                </div>
+  
+                <input type="text" name="" placeholder="Notes/Comments*" id="" required>
+    
+              </div>
+              
             </div>
-            
+  
+  
           </div>
-
-
-        </div>
+  
+          <div class="grid grid-5">
+            <button type="submit" class="panel-btn">ADD ANOTHER CARD</button>
+          </div>
+        </form>
 
       </div>
 
