@@ -1,4 +1,4 @@
-<main class="grid grid-main">
+<main class="grid grid-main" [ngClass]="{'nav-open': isOpenMenu}">
 
   <nav class="nav">
     <ul class="nav-main">
@@ -29,9 +29,11 @@
     </ul>
   </nav>
 
-  <header>
-    <div class="grid grid-header">
-      <a href="#menu">Navbar</a>
+  <header class="header">
+    <div class="header-top">
+      <a href="#" (click)="nav()">
+        <span class="icon-bars" [ngClass]="{'icon-close': isOpenMenu, 'icon-bars': !isOpenMenu}"></span>
+      </a>
   
       <ul>
         <li>
